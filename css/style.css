@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar-nav .nav-link{
+    position: relative;
+}
+
+.navbar-nav .nav-link::before{
+    content: " ";
+    position: absolute;
+    transform: scaleX(0);
+    height: 4px;
+    background-color: black;
+    bottom: -4px ;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    transform-origin: bottom left;
+}
+
+
+.navbar-nav .nav-link.active{
+    position: relative;
+
+    
+
+}
+
+.navbar-nav .nav-link.active::before{
+    content: " ";
+    position: absolute;
+    transform: scaleX(1);
+    height: 2px;
+    background-color: black;
+    bottom: -4px ;
+    width: 92%;
+    left: 0px;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+    transform-origin: bottom left;
+}
+
+#home{
+    background-image: url("../imgs/imgs/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.animated-span::after{
+    content: "|";
+    animation-name: jobs;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jobs{
+    0%{
+        content :" D|" ;
+    }
+    2%{
+        content :"De|" ;
+    }
+    4%{
+        content :"Dev|" ;
+    }
+    6%{
+        content :" Deve|" ;
+    }
+    8%{
+        content: "Develo|";
+    }
+    10%{
+        content :"Develop|" ;
+    }
+    12%{
+        content: "Develope|";
+    }
+    14%{
+        content : "Developer|";
+    }
+    16%{
+        content: "Develope|";
+        
+    }
+    18%{
+        content :"Develop|" ;
+        
+    }
+    20%{
+        content: "Develo|";
+        
+    }
+    22%{
+        content :" Deve|" ;
+    }
+    24%{
+        content :"Dev|" ;
+    }
+    26%{
+        content :"De|" ;
+    }
+    28%{
+        content :" D|" ;
+    }
+    30%{
+        content : "|"
+    }
+    32%{
+        content: "D|";
+    }
+    34%{
+        content: "De|";
+    }
+    36%{
+        content: "Des|";
+    }
+    38%{
+        content: "Desi|";
+    }
+    40%{
+        content: "Desig|" ;
+    }
+    42%{
+        content: "Design|";
+    }
+    44%{
+        content: "Designe|";
+    }
+    46%{
+        content: "Designer|";
+    }
+    48%{
+        content: "Designe|";
+    }
+     50%{
+       content: "Design|";
+    }
+     52%{
+       content: "Desig|";
+    }
+     54%{
+       content: "Desi|";
+    }
+     56%{
+         content : "Des|";
+    }
+     58%{
+         content: "De|";
+    }
+     60%{
+         content: "D|";
+    }
+     62%{
+        content: "|";
+    }
+     64%{
+        content: "L|";
+    }
+     66%{
+        content: "La|";
+    }
+     68%{
+        content: "Lar|";
+    }
+     70%{
+        content : "Larr|" ;
+    }
+    72%{
+        content: "Larry|";
+    }
+    74%{
+        content: "Larry |";
+    }
+    76%{
+        content: "Larry D|";
+    }
+    78%{
+        content: "Larry Da|";
+    }
+    80%{
+        content: "Larry Dan|";
+    }
+    82%{
+        content: "Larry Danie|";
+    }
+    84%{
+        content: "Larry DanieL|";
+        
+    }
+    85%{
+        content: "Larry Danie|";
+    }
+    86%{
+        content: "Larry Dan|";
+    }
+    87%{
+        content: "Larry Da|";
+    }
+    88%{
+        content: "Larry D|";
+    }
+    89%{
+        content: "Larry |";
+    }
+    90%{
+        content: "Larry|";
+    }
+    91%{
+        content : "Larr|" ;
+    }
+    92%{
+        content: "Lar|";
+    }
+    93%{
+        content: "La|";
+    }
+    94%{
+        content: "L|";
+    }
+    95%{
+        content: "|";
+    }
+
+}
+
+
+
+.home-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    
+}
+
+
+/** ------------------------------------------------------------------------------------------------------------------------------------ **/
+/**                                                   about                                                                              **/
+
+
+.about-image::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-image: url("../imgs/imgs/dots.png");
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    z-index: -1;
+
+}
+
+.percentage-1{
+   
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+
+}
+.contactt-button{
+    background-color: black;
+    transition: all 1s;
+    border-radius: 3px solid black;
+}
+.contactt-button:hover{
+    background-color: white;
+}
+ #about .btn-obtain{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    transition: all 1s;
+}
+#about .btn-obtain:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+#about .btn-obtain2{
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 1s;
+}
+#about .btn-obtain2:hover{
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/** ------------------------------------------------------------------------------------------------------------------------------------ **/
+/**                                                       Services                                                                      **/
+
+#services{
+    background-color: #f7f7f7;
+    z-index: -1;
+}
+ h2{
+    z-index: 5;
+}
+.services-h h2::after{
+    content: "";
+    width: 80%;
+    height: 50%;
+    background-image: url("../imgs/imgs/dots.png");
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    right: 20px;
+    background-repeat: repeat;
+    z-index:-1;
+    
+
+
+}
+.services-dotted-div{
+    padding-top: 0;
+}
+
+.service-icon{
+    width: 50px;
+    height: 50px;
+    background-color: gainsboro;
+    transition: all 1s;
+    
+}
+.service-icon i{
+    color: black;
+    font-size: x-large;
+    transition: all 1s;
+}
+
+
+
+.service-card:hover{
+    .service-icon{
+        background-color: black;
+        color: white;
+        
+    }
+  
+   
+}
+
+
+/** ------------------------------------------------------------------------------------------------------------------------------------ **/
+/**                                                       portifolio                                                                     **/
+.nav-pills .nav-link{
+    color: black;
+    background-color: transparent;
+    position: relative;
+}
+.nav-pills .nav-link::before{
+    content: " ";
+    position: absolute;
+    transform: scaleX(0);
+    height: 4px;
+    background-color: black;
+    bottom: -4px ;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    transform-origin: bottom left;
+}
+.nav-pills .nav-link.active{
+    position: relative;
+
+    
+
+}
+
+.nav-pills .nav-link.active::before{
+    content: " ";
+    position: absolute;
+    transform: scaleX(1);
+    height: 2px;
+    background-color: black;
+    bottom: -4px ;
+    width: 92%;
+    left: 0px;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+    transform-origin: bottom left;
+}
+
+.nav-pills .nav-link .theall::before{
+    content: " ";
+    position: absolute;
+    transform: scaleX(1);
+    height: 2px;
+    background-color: black;
+    bottom: -4px ;
+    width: 92%;
+    left: 0px;
+    z-index: -1;
+    transform-origin: bottom left;
+}
+.nav-pills .nav-link .theother::before{
+
+    content: " ";
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    background-color: black;
+    bottom: -4px ;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    transform-origin: bottom left;
+  
+}
+
+
+.layer-portifolio{
+      
+     background-color: white ;
+     opacity: 0;
+     width: 95%;
+     height: 95%;
+     position: absolute;
+     transition: all 0.7s;
+     top: 8px;
+     left: 10px;
+     
+     
+
+}
+.porti-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+.porti-icon a{
+    color: white;
+}
+
+.theonecard:hover{
+    .layer-portifolio{
+        opacity: 1;
+    }
+}
+.the-text{
+    transform: translate(0,-20px);
+    transition: all 1s;
+}
+.theicons{
+    transform: translate(0,20px);
+    transition: all 1s;
+}
+.theonecard:hover{
+    .the-text{
+        transform: translate(0,0);
+    }
+    .theicons{
+        transform: translate(0,0);
+    }
+}
+
+.porti-icon:hover{
+    background-color: #ffffff;
+    border: 1px solid black;
+   
+
+}
+.porti-icon:hover a{
+    color: black;
+}
+
+/** ------------------------------------------------------------------------------------------------------------------------------**/
+
+/**                                                    testinomial                                                               **/
+
+
+
+
+#Testimonial{
+    background-color: #f7f7f7;
+    
+}
+
+#Testimonial .carousel-indicators [data-bs-target]{
+    all: unset;
+    background-color: rgba(92, 89, 89, 0.8);
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    margin: 0 3px;
+}
+#Testimonial .carousel-indicators [data-bs-target].active{
+   
+    background-color: rgba(0, 0, 0, 0.8);
+ 
+}
+
+
+/** ------------------------------------------------------------------------------------------------------------------------------**/
+
+/**                                                    our team                                                                  **/
+
+
+
+
+#our-team{
+    background-color: #f7f7f7;
+}
+.ourteam-cards{
+    width: 95%;
+    overflow: hidden;
+    transition: all 1s;
+    
+}
+
+.the-top{
+    position: relative;
+    overflow: hidden;
+}
+.the-top img{
+    transition: all 1s;
+}
+
+.the-top:hover img{
+    transform: scale(1.5);
+}
+.team-layer{
+    width: 50%;
+    height: 50%;
+    left:80px;
+    top: 80px;
+    background-color: white ;
+    opacity: 0;
+    position: absolute;
+    
+    transition: all 1s;
+}
+
+.the-top:hover .team-layer{
+    width: 95%;
+    height: 95%;
+    background-color: #ffffff;
+    opacity: 1;
+
+    left: 8px;
+    top: 5px;
+    transform: rotatey(360deg);
+    
+
+                    
+}
+
+.thecard-body{
+    background-color:#5b5b5b ;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.ourteam-cards:hover .the-top .team-layer{
+    width: 95%;
+    height: 95%;
+    background-color: #ffffff;
+    opacity: 1;
+
+    left: 8px;
+    top: 5px;
+    transform: rotatey(360deg);
+}
+
+
+
+.teamsicon{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamsicon a{
+    color: white;
+    
+    transition: all 0.1s;
+}
+.teamsicon:hover a{
+    color: black;
+    
+}
+.teamsicon:hover {
+   background-color: #ffffff;
+   border: 1px solid black;
+}
+
+
+
+/** -------------------------------------------------------------------------------------------------------------------------------**/
+
+/**                                    contact-us                                                                                  **/
+
+.div-icon{
+    
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: gainsboro ;
+        transition: all 1s;
+   
+    
+    
+    
+}
+
+.div-content:hover .div-icon{
+    background-color: black;
+    color: white;
+}
+
+
+
+#contact-us .button-div{
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: all 1s;
+}
+
+#contact-us .button-div a{
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+}
+#contact-us .button-div:hover{
+    
+        border: 2px solid black;
+   
+       background-color: rgb(255, 255, 255); 
+}
+#contact-us .button-div:hover a{
+    color: black;
+   
+}
+textarea:focus, input:focus{
+    outline: none;
+}
